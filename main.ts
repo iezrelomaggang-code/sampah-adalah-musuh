@@ -4,6 +4,16 @@ namespace SpriteKind {
 info.onLifeZero(function () {
     game.gameOver(false)
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.TRASH, function (sprite, otherSprite) {
+    EZEL_LGM += 1
+    info.changeScoreBy(1)
+    yadno_hyt()
+    info.startCountdown(7)
+    if (EZEL_LGM == 10) {
+        EZEL_LGM = 0
+        info.changeLifeBy(1)
+    }
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mulai == 1) {
         mulai = 0
@@ -243,15 +253,6 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
         timer.after(1000, function () {
             Sbar_dulu_stephen = 0
         })
-    }
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.TRASH, function (sprite, otherSprite) {
-    EZEL_LGM += 1
-    info.changeScoreBy(1)
-    yadno_hyt()
-    info.startCountdown(7)
-    if (EZEL_LGM == 10) {
-        info.changeLifeBy(1)
     }
 })
 let Ka_artur: Sprite = null
