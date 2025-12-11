@@ -1,0 +1,39 @@
+{
+    "name": "sampah adalah musuh",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "sprite-scaling": "*",
+        "animation": "*",
+        "controller": "*",
+        "color-coded-tilemap": "*",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll#v0.1.2"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v2.0.62",
+        "tag": "v2.0.62",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/78fef54853ad3c71c6dcf0886b1083107d9abad2",
+        "target": "2.0.62",
+        "pxt": "11.3.66",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
